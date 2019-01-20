@@ -1,0 +1,15 @@
+{
+  "name": "disguise",
+  "version": "1.0.0",
+  "description": "Ragnarok Online Disguise Event - Guess the name of monster on the image and win the prize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Litro",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "node-fetch": "^2.3.0"
+  }
+}
