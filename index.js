@@ -100,8 +100,10 @@ client.on("message", async message => {
 			if (run === 1) {
 				console.log(`Disguise is on going...`);
 				message.channel.send(`Disguise is on going....`);
-			} else
+			} else {
+				run = 1;
 				Disguise(message.channel.id);
+			}
 		}
 	}
 	if(command === "stop") {
@@ -113,6 +115,7 @@ client.on("message", async message => {
 				message.channel.send(`Disguise is stopped by staff....`);
 				clearTimeout(SendAnswer);
 				answer = "";
+				run = 0;
 				quizCounter = 0;
 			}
 		}
